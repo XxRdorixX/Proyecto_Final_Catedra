@@ -1,0 +1,25 @@
+<h2 class="text-center mb-3">Gestión de Aerolíneas</h2>
+
+<div class="mb-3">
+    <button class="btn btn-success" onclick="mostrarFormulario()">+ Nueva Aerolínea</button>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-primary">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>País</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="listaAerolineas"></tbody>
+</table>
+
+<div id="formulario" style="display:none;">
+    <h4>Agregar Aerolínea</h4>
+    <input type="text" id="nombre" placeholder="Nombre" class="form-control mb-2">
+    <input type="text" id="pais" placeholder="País" class="form-control mb-2">
+    <button class="btn btn-primary" onclick="guardarAerolinea()">Guardar</button>
+    <button class="btn btn-secondary" onclick="cancelar()">Cancelar</button>
+</div>

@@ -1,0 +1,27 @@
+<h2 class="text-center mb-3">Gestión de Aviones</h2>
+
+<div class="mb-3">
+    <button class="btn btn-success" onclick="mostrarFormularioAvion()">+ Nuevo Avión</button>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-primary">
+    <tr>
+        <th>ID</th>
+        <th>Modelo</th>
+        <th>Capacidad</th>
+        <th>Aerolínea</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="listaAviones"></tbody>
+</table>
+
+<div id="formularioAvion" style="display:none;">
+    <h4>Agregar Avión</h4>
+    <input type="text" id="modelo" placeholder="Modelo" class="form-control mb-2">
+    <input type="number" id="capacidad" placeholder="Capacidad" class="form-control mb-2">
+    <input type="text" id="aerolinea" placeholder="Aerolínea" class="form-control mb-2">
+    <button class="btn btn-primary" onclick="guardarAvion()">Guardar</button>
+    <button class="btn btn-secondary" onclick="cancelarAvion()">Cancelar</button>
+</div>

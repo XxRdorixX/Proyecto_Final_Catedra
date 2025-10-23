@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sistemaboletosaereos?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: aerolinea-api
+
+server:
+  port: 8080
+
+jwt:
+  secret: "MiSuperClaveSecretaJWT123456"
+  expiration: 86400000
+

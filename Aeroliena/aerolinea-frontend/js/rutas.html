@@ -1,0 +1,27 @@
+<h2 class="text-center mb-3">Gestión de Rutas</h2>
+
+<div class="mb-3">
+    <button class="btn btn-success" onclick="mostrarFormularioRuta()">+ Nueva Ruta</button>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-primary">
+    <tr>
+        <th>ID</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Duración</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody id="listaRutas"></tbody>
+</table>
+
+<div id="formularioRuta" style="display:none;">
+    <h4>Agregar Ruta</h4>
+    <input type="text" id="origen" placeholder="Origen" class="form-control mb-2">
+    <input type="text" id="destino" placeholder="Destino" class="form-control mb-2">
+    <input type="text" id="duracion" placeholder="Duración (horas)" class="form-control mb-2">
+    <button class="btn btn-primary" onclick="guardarRuta()">Guardar</button>
+    <button class="btn btn-secondary" onclick="cancelarRuta()">Cancelar</button>
+</div>
